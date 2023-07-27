@@ -4,7 +4,7 @@ It serves as a centralized platform for administrators, faculty and students to 
 
 The Tables used in this University Management System are:
 1) **collegefee** - Students who paid a particular semester fees.
-   <br>Table structure: rollno	int primary key , course varchar(20), branch varchar(20), semester varchar(20), total varchar(20)
+   <br>Table structure: rollno int primary key , course varchar(20), branch varchar(20), semester varchar(20), total varchar(20)
 
    | rollno        | course        | branch            | semester      | course        | 
    | ------------- | ------------- | ----------------- | ------------- | ------------- |
@@ -40,8 +40,14 @@ The Tables used in this University Management System are:
    | 15331978      | 2ndSemester   | 67            | 54            | 89            | 90            | 79            |
    | 15339119      | 1stSemester   | 90            | 85            | 93            | 88            | 82            |
    
-7) **student**
-8) **studentleave**
-9) **subject**
-10) **teacher**
-11) **teacherleave**
+7) **student** - Stores all the student information
+   <br>Table structure - name varchar(40), fname varchar(40), rollno int primary key, dob varchar(40), address varchar(100), phone varchar(20), email varchar(40), class_x varchar (20), class_xii varchar (20), adhaar varchar(20), course varchar(40), branch varchar (40)
+   | name       | fname       | rollno  | dob        | address      | phone      | email          | class_x | class_xii| adhaar      | course    | branch          |
+   | ---------- | ----------- | ------- | ---------- | ------------ | ---------- | -------------- | ------- | -------- | ----------- | --------- | --------------- |
+   | Virat Kohli| Rohit Sharma| 15331598| 19-Mar-2010| Delhi, India | 1476589312 | virat@gmail.com| 10      | 15       | 758964123472| BTech     | Computer Science|
+   | 15339119      | 1stSemester   | 90            | 85            | 93            | 88            | 82            |
+   
+9) **studentleave**
+10) **subject**
+11) **teacher**
+12) **teacherleave**
