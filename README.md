@@ -26,17 +26,8 @@ The Tables used in this University Management System are:
    | MCA           | 43000         | 33000         | 33000         | 33000         | 
    | MCom          | 30000         | 30000         | 30000         | 30000         |
    | MSc           | 38000         | 35000         | 35000         | 35000         |
-BA	32000	28000	28000	28000	28000	28000		
-BCA	46000	33000	33000	33000	33000	33000		
-Bcom	25000	22000	22000	22000	22000	22000		
-BSc	40000	35000	35000	35000	35000	35000		
-BTech	48000	43000	43000	43000	43000	43000	43000	43000
-MA	22000	20000	20000	20000				
-MBA	46000	33000	33000	33000				
-MCA	43000	33000	33000	33000				
-Mcom	30000	30000	30000	30000				
-MSc	38000	35000	35000	35000				
-4) **login**
+3) **login** - Stores the username and password for student and admin/factulty
+   <br>Table structure: username varchar(25), password varchar
 5) **marks**
 6) **student**
 7) **studentleave**
