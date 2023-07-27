@@ -57,11 +57,19 @@ The Tables used in this University Management System are:
    | 15339119      | 09-Mar-2023   | Full Day      |
    
 7) **subject** - Stores the subject combination for a particular student whose marks are to be stored accordingly.
-   <br>Table structure - rollno int, semester varchar(20), subject1 varchar(50), subject2 varchar(50), subject3 varchar(50), subject4 varchar(50), subject5 varchar(50)
+   <br>Table structure - rollno int, semester varchar(20), subject1 varchar(50), subject2 varchar(50), subject3 varchar(50), subject4 varchar(50), subject5 varchar(50), primary key (rollno, semester)
    | rollno        | semester      | subject1      | subject1      | subject1      | subject1      | subject1      |
    | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
    | 15331978      | 2nd Semester  | DSA           | CD            | ML            | AI            | OOP           |
    | 15338745      | 1st Semester  | OS            | MATHS         | CD            | ECO           | OR            |
    
-9) **teacher** - 
-13) **teacherleave**
+8) **teacher** - Stores all the basic details of the teachers.
+   <br>Table structure - name varchar(40), fname varchar(40), empId int primary key, dob varchar(40), address varchar(100), phone varchar(20), email varchar(40), class_x varchar(20), class_xii varchar(20), aadhar varchar(20), education varchar(40), department varchar(40)
+   | name       | fname       | empId   | dob        | address      | phone      | email          | class_x | class_xii| adhaar      | education    | department   |
+   | ---------- | ----------- | ------- | ---------- | ------------ | ---------- | -------------- | ------- | -------- | ----------- | ------------ | ------------ |
+   |Monidipa Das|Rama Nath Paul|101775  | 20-Dec-1969|Salt lake, Kolkata|7895647894|monidipadas@gmail.com|80| 87       | 125648597623| Bsc          |  Civil       |
+   |Debabrata Das|Jnan Ranjan Das|1011169|24-Mar-1966|Sonarpur, Kolkata|9432238050|debabrata@gmail.com| 90  | 95       | 789456123078| Msc        |Computer Science|
+   |Ravi Shastri| VVS Laxman  | 1016658 | 18-Dec-2002|Wankhede, Mumbai|7531598546|shastri@gmail.com| 10     | 50       | 321654789654| MBA          | Mechanical   |
+   |Arindam Sinha Roy|Tapas Roy|1017774| 15-Aug-1947 |sonarpur, kolkata|7896547854| asr@gmail.com | 10      | 15       | 369896532974| BTech        | IT           |
+   
+9) **teacherleave** - 
