@@ -37,10 +37,10 @@ The Tables used in this University Management System are:
    <br>Table stucture - rollno int, semester varchar(20), marks1 varchar(50), marks2 varchar(50), marks3 varchar(50), marks4 varchar(50), marks5 varchar(50), primary key (rollno,semester)
    | rollno        | semester      | marks1        | marks2        | marks3        | marks4        | marks5        |
    | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-   | 15331978      | 2ndSemester   | 67            | 54            | 89            | 90            | 79            |
-   | 15339119      | 1stSemester   | 90            | 85            | 93            | 88            | 82            |
+   | 15331978      | 2ndSemester   | 90            | 85            | 78            | 70            | 71            |
+   | 15338745      | 1stSemester   | 70            | 100           | 98            | 54            | 77            |
    
-7) **student** - Stores all the student information
+5) **student** - Stores all the student basic details.
    <br>Table structure - name varchar(40), fname varchar(40), rollno int primary key, dob varchar(40), address varchar(100), phone varchar(20), email varchar(40), class_x varchar (20), class_xii varchar (20), adhaar varchar(20), course varchar(40), branch varchar (40)
    | name       | fname       | rollno  | dob        | address      | phone      | email          | class_x | class_xii| adhaar      | course    | branch          |
    | ---------- | ----------- | ------- | ---------- | ------------ | ---------- | -------------- | ------- | -------- | ----------- | --------- | --------------- |
@@ -49,7 +49,19 @@ The Tables used in this University Management System are:
    | Soham Jana | Subir Jana  | 15338745| 18-Dec-2002| Pratapgarh, Garia | 0123698564 | virat@gmail.com| 100| 20       | 312654789654| BTech     | Electronics     |
    | Shoumik Das|Debabrata Das| 15339119| 15-Oct-2001| Garia, Kolkata | 6289064437 | shoumikdas2001@gmail.com|88| 83   | 123456789012| BTech     | Computer Science|
    
-9) **studentleave**
-10) **subject**
-11) **teacher**
-12) **teacherleave**
+6) **studentleave** - Stores the leave details (half/full day) for a student at a particular date.
+    <br>Table structure - rollno int, date varchar(50), duration varchar(20), primary key (rollno, date)
+   | rollno        | date          | duration      |
+   | ------------- | ------------- | ------------- |
+   | 15331978      | 23-Mar-2023   | Half Day      |  
+   | 15339119      | 09-Mar-2023   | Full Day      |
+   
+7) **subject** - Stores the subject combination for a particular student whose marks are to be stored accordingly.
+   <br>Table structure - rollno int, semester varchar(20), subject1 varchar(50), subject2 varchar(50), subject3 varchar(50), subject4 varchar(50), subject5 varchar(50)
+   | rollno        | semester      | subject1      | subject1      | subject1      | subject1      | subject1      |
+   | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+   | 15331978      | 2nd Semester  | DSA           | CD            | ML            | AI            | OOP           |
+   | 15338745      | 1st Semester  | OS            | MATHS         | CD            | ECO           | OR            |
+   
+9) **teacher** - 
+13) **teacherleave**
