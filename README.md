@@ -72,4 +72,11 @@ The Tables used in this University Management System are:
    |Ravi Shastri| VVS Laxman  | 1016658 | 18-Dec-2002|Wankhede, Mumbai|7531598546|shastri@gmail.com| 10     | 50       | 321654789654| MBA          | Mechanical   |
    |Arindam Sinha Roy|Tapas Roy|1017774| 15-Aug-1947 |sonarpur, kolkata|7896547854| asr@gmail.com | 10      | 15       | 369896532974| BTech        | IT           |
    
-9) **teacherleave** - 
+9) **teacherleave** - Stores the leave details (half/full) for a teacher at a particular date.
+   <br>Table structure - empId int, date varchar(50), duration varchar(20), primary key (empId, date)
+   | empId        | date          | duration      |
+   | ------------ | ------------- | ------------- |
+   | 101775       | 01-Mar-2023   | Half Day      |  
+   | 1011169      | 01-Mar-2023   | Half Day      |
+   | 1016658      | 01-Mar-2023   | Half Day      |
+   | 1017774      | 14-Mar-2023   | Full Day      |
