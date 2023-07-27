@@ -44,8 +44,10 @@ The Tables used in this University Management System are:
    <br>Table structure - name varchar(40), fname varchar(40), rollno int primary key, dob varchar(40), address varchar(100), phone varchar(20), email varchar(40), class_x varchar (20), class_xii varchar (20), adhaar varchar(20), course varchar(40), branch varchar (40)
    | name       | fname       | rollno  | dob        | address      | phone      | email          | class_x | class_xii| adhaar      | course    | branch          |
    | ---------- | ----------- | ------- | ---------- | ------------ | ---------- | -------------- | ------- | -------- | ----------- | --------- | --------------- |
-   | Virat Kohli| Rohit Sharma| 15331598| 19-Mar-2010| Delhi, India | 1476589312 | virat@gmail.com| 10      | 15       | 758964123472| BTech     | Computer Science|
-   | 15339119      | 1stSemester   | 90            | 85            | 93            | 88            | 82            |
+   | Virat Kohli| Rohit Sharma| 15331598| 19-Mar-2010| Delhi, India | 1476589312 | virat@gmail.com| 10      | 15       | 758964123472| BTech     | Electronics     |
+   |Sourojit Das| Avijit Das  | 15331978| 28-Mar-2003|Mahamayatala, Kolkata| 03323302125 | souro@gmail.com| 90|88      | 741085963201| BTech     | Computer Science|
+   | Soham Jana | Subir Jana  | 15338745| 18-Dec-2002| Pratapgarh, Garia | 0123698564 | virat@gmail.com| 100| 20       | 312654789654| BTech     | Electronics     |
+   | Shoumik Das|Debabrata Das| 15339119| 15-Oct-2001| Garia, Kolkata | 6289064437 | shoumikdas2001@gmail.com|88| 83   | 123456789012| BTech     | Computer Science|
    
 9) **studentleave**
 10) **subject**
